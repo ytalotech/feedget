@@ -33,7 +33,7 @@ Projeto desenvolvido durante a trilha Impulse do Next Level Week #8 da [Rocketse
 ### Status:
 
 - Aula 1 - Início do front-end web em React - Concluída ✅
-- Aula 2 - Em construção 🚧
+- Aula 2 - Desenvolvido o front-end web do envio de feedback ✅
 - Aula 3 - Em construção 🚧
 - Aula 4 - Em construção 🚧
 - Aula 5 - Em construção 🚧
