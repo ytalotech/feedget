@@ -15,7 +15,7 @@ describe('Submit feedcack', () => {
         await expect(submitFeedback.execute({
             type: 'BUG',
             comment: 'example comment',
-            screenshot: 'data:image/png:base64,ff8d7f9df8d77f9d7f9d7f9f'
+            screenshot: 'data:image/png;base64,ff8d7f9df8d77f9d7f9d7f9f'
         })).resolves.not.toThrow(); //espero que tenha sido resolvida essa função sem dar throw
 
         expect(createFeedbackSpy).toHaveBeenCalled();//espero que essa função tenha sido chamada
@@ -26,7 +26,7 @@ describe('Submit feedcack', () => {
         await expect(submitFeedback.execute({
             type: '',
             comment: 'example comment',
-            screenshot: 'data:image/png:base64,ff8d7f9df8d77f9d7f9d7f9f'
+            screenshot: 'data:image/png;base64,ff8d7f9df8d77f9d7f9d7f9f'
         })).rejects.toThrow(); //espero que tenha sido rejeitada essa função e dar throw
     });
 
@@ -34,7 +34,7 @@ describe('Submit feedcack', () => {
         await expect(submitFeedback.execute({
             type: 'BUG',
             comment: '',
-            screenshot: 'data:image/png:base64,ff8d7f9df8d77f9d7f9d7f9f'
+            screenshot: 'data:image/png;base64,ff8d7f9df8d77f9d7f9d7f9f'
         })).rejects.toThrow(); //espero que tenha sido rejeitada essa função e dar throw
     });
 
